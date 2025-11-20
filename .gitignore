@@ -1,14 +1,43 @@
-target
-nbactions.xml
-.classpath
-.project
-.settings
-.idea
+# Build outputs (ignore compiled files but keep source)
+/target/
+/build/
+*.war
+*.ear
+
+# IDE files (ignore IDE-specific files)
+.idea/
 *.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.project
+.classpath
+
+# OS files
 .DS_Store
-.checkstyle
-.gradle
-out
-build
-.vscode
-bin
+Thumbs.db
+
+# Gradle cache (ignore but keep wrapper)
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# Runtime generated files
+/logs/
+*.log
+/media/
+
+# Database files (runtime generated)
+/target/*.db
+/target/*.mv.db
+/target/*.trace.db
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Keep debug.xml for development
+# Keep all source code and configs needed to run
